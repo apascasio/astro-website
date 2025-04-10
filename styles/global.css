@@ -1,0 +1,44 @@
+:root {
+  --bg-light: #f8fafc;
+  --text-light: #0f172a;
+  --link-light: #0284c7;
+
+  --bg-dark: #0f172a;
+  --text-dark: #e0f2fe;
+  --link-dark: #7dd3fc;
+
+  --font-sans: 'Segoe UI', Roboto, Helvetica, sans-serif;
+}
+
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+a {
+  color: var(--link-light);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  a {
+    color: var(--link-dark);
+  }
+}
+
